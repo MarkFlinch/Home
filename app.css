@@ -192,11 +192,12 @@ nav .fa {
 
 .about-col {
   flex-basis: 31%;
-  background-color: #DFF3E3;
+  background-color: rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px 12px;
   box-sizing: border-box;
+  transition: 1s;
 }
 
 h3 {
@@ -206,7 +207,8 @@ h3 {
 }
 
 .about-col:hover {
-  box-shadow: 0 0 20px 1px black;
+  box-shadow: 0 0 20px .5px grey;
+  background-color: #A8CDDC;
 }
 
 @media (max-width: 700px) {
