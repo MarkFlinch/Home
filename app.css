@@ -4,14 +4,18 @@
   font-family: "Times New Roman", Times, serif;
 }
 
+body{
+  background-color: #f7f7f7;
+}
+
 .header {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(), url();
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(7, 16, 52, 0.7)), url(images/abstract.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
-  background-color: red;
+  background-color: blue;
 }
 
 nav {
@@ -38,9 +42,9 @@ nav img {
 }
 
 .nav-links ul li a {
-  color: black;
+  color: white;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 20px;
 }
 
 /*creates underline then allows it to load when hovered*/
@@ -60,7 +64,7 @@ nav img {
 
 .text-box {
   width: 90%;
-  color: black;
+  color: white;
   position: absolute;
   /*centers text in the center of the div*/
   top: 50%;
@@ -82,8 +86,8 @@ nav img {
 .hero-btn {
   display: inline-block;
   text-decoration: none;
-  color: red;
-  border: 1px solid black;
+  color:white;
+  border: 1px solid white;
   padding: 12px 34px;
   font-size: 13px;
   position: relative;
@@ -136,10 +140,29 @@ nav .fa {
   }
 }
 
+
+.page-btn {
+  display: inline-block;
+  text-decoration: none;
+  color:black;
+  border: 1px solid black;
+  padding: 12px 34px;
+  font-size: 13px;
+  position: relative;
+  background: transparent;
+  cursor: pointer;
+}
+
+.page-btn:hover {
+  border: 1px solid red;
+  background-color: red;
+  transition: 1s;
+}
+
 /*about*/
 
 .about {
-  width: 80%;
+  width: 100%;
   padding-top: 100px;
   margin: auto;
   text-align: center;
@@ -158,6 +181,8 @@ nav .fa {
 }
 
 .row {
+  margin: auto;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -166,7 +191,7 @@ nav .fa {
 
 .about-col {
   flex-basis: 31%;
-  background-color: orange;
+  background-color: #DFF3E3;
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px 12px;
@@ -180,7 +205,7 @@ h3 {
 }
 
 .about-col:hover {
-  box-shadow: 0 0 20px 0px black;
+  box-shadow: 0 0 20px 1px black;
 }
 
 @media (max-width: 700px) {
@@ -192,10 +217,11 @@ h3 {
 /*projects*/
 
 .project {
-  width: 80%;
+  width: 100%;
   padding-top: 100px;
   margin: auto;
   text-align: center;
+  background-color: white;
 }
 
 .project-col {
@@ -246,7 +272,7 @@ h3 {
 /*facilities*/
 
 .facilities {
-  width: 80%;
+  width: 100%;
   margin: auto;
   text-align: center;
   padding-top: 100px;
@@ -256,7 +282,7 @@ h3 {
   flex-basis: 31%;
   border-radius: 10px;
   margin-bottom: 5%;
-  text-align: left;
+  text-align: center;
 }
 
 .facilities-col img {
@@ -271,15 +297,16 @@ h3 {
 .facilities-col h3 {
   margin-top: 16px;
   margin-bottom: 15px;
-  text-align: left;
+  text-align: center;
 }
 
 /*testimonials*/
 .testimonials {
-  width: 80%;
+  width: 100%;
   margin: auto;
   padding-top: 100px;
   text-align: center;
+  background-color: white;
 }
 
 .testimonial-col {
@@ -320,10 +347,10 @@ h3 {
 
 /*call-to-action*/
 .call-to-action {
-  margin: 100px auto;
+  margin:auto;
   width: 80%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(unknown.png);
+    url(images/unknown.png);
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -349,6 +376,7 @@ h3 {
   width: 100%;
   text-align: center;
   padding: 30px 0;
+  background-color: #A8CDDC;
 }
 
 .footer h4 {
