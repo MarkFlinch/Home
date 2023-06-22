@@ -358,7 +358,7 @@ h3 {
   margin:auto;
   width: 80%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(images/unknown.png);
+    url(images/comp.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -400,6 +400,7 @@ h3 {
   padding: 18px 0;
 }
 
+/*error page*/
 .error {
   min-height: 100vh;
   width: 100%;
