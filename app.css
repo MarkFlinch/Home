@@ -157,6 +157,7 @@ nav .fa {
   border: 1px solid red;
   background-color: red;
   transition: 1s;
+  color: white;
 }
 
 /*about*/
@@ -286,8 +287,15 @@ h3 {
 }
 
 .facilities-col img {
+  filter: grayscale(100%);
   width: 100%;
   border-radius: 10px;
+  background-color: transparent;
+  transition: 1s;
+}
+
+.facilities-col img:hover {
+  filter: grayscale(0%);
 }
 
 .facilities-col p {
@@ -310,11 +318,11 @@ h3 {
 }
 
 .testimonial-col {
-  flex-basis: 44%;
+  flex-basis: 40%;
   border-radius: 10px;
   margin-bottom: 5%;
   text-align: left;
-  background: blue;
+  background: #f7f7f7;
   padding: 25px;
   cursor: pointer;
   display: flex;
@@ -390,4 +398,33 @@ h3 {
   margin: 0 13px;
   cursor: pointer;
   padding: 18px 0;
+}
+
+.error {
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.error-text-box {
+  width: 90%;
+  color: black;
+  position: absolute;
+  /*centers text in the center of the div*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.error-text-box h1 {
+  font-size: 62px;
+}
+
+.error-text-box p {
+  margin: 10px 0px 40px;
+  color: black;
+  font-size: 14px;
 }
