@@ -5,7 +5,16 @@
 }
 
 body{
-  background-color: #f7f7f7;
+  background-color: #1D0E35;
+}
+
+body h1{
+  color: #f7f7f7;
+  font-family: "robotobold";
+}
+
+body p{
+  font-family: "roboto";
 }
 
 .header {
@@ -172,6 +181,15 @@ nav .fa {
 .about h1 {
   font-size: 40px;
   font-weight: 600;
+  color: #f7f7f7;
+}
+
+.desc {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+  color: #f7f7f7;
 }
 
 .about p {
@@ -190,9 +208,11 @@ nav .fa {
   margin-top: 5%;
 }
 
+/*add gradient org->purp blue-red hover*/
 .about-col {
   flex-basis: 31%;
-  background-color: rgba(0, 0, 0, 0.15);
+  background: rgb(35,141,129);
+  background: linear-gradient(0deg, rgba(35,141,129,1) 0%, rgba(167,205,220,1) 63%);
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px 12px;
@@ -208,7 +228,6 @@ h3 {
 
 .about-col:hover {
   box-shadow: 0 0 20px .5px grey;
-  background-color: #A8CDDC;
 }
 
 @media (max-width: 700px) {
@@ -218,13 +237,12 @@ h3 {
 }
 
 /*projects*/
-
 .project {
   width: 100%;
   padding-top: 100px;
   margin: auto;
   text-align: center;
-  background-color: white;
+  color: #f7f7f7;
 }
 
 .project-col {
@@ -274,21 +292,30 @@ h3 {
 
 /*facilities*/
 
-.facilities {
-  width: 100%;
+.spot {
+  color: #f7f7f7;
+  width: 80%;
   margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
   text-align: center;
   padding-top: 100px;
+  border-radius: 10px;
+  border: 2px solid white;
 }
 
-.facilities-col {
+.spot h1{
+  padding-bottom: 10px;
+}
+
+.spot-col {
   flex-basis: 31%;
   border-radius: 10px;
   margin-bottom: 5%;
   text-align: center;
 }
 
-.facilities-col img {
+.spot-col img {
   filter: grayscale(100%);
   width: 100%;
   border-radius: 10px;
@@ -296,15 +323,21 @@ h3 {
   transition: 1s;
 }
 
-.facilities-col img:hover {
+.spot-col img:hover {
   filter: grayscale(0%);
 }
 
-.facilities-col p {
-  padding: 0;
+.spot-col a{
+  margin-top: 15px;
 }
 
-.facilities-col h3 {
+.spot-col p {
+  padding: 0;
+  color: #f7f7f7;
+}
+
+.spot-col h3 {
+  color: #f7f7f7;
   margin-top: 16px;
   margin-bottom: 15px;
   text-align: center;
@@ -316,7 +349,8 @@ h3 {
   margin: auto;
   padding-top: 100px;
   text-align: center;
-  background-color: white;
+  background-color: #120920;
+  color: #f7f7f7;
 }
 
 .testimonial-col {
@@ -324,7 +358,7 @@ h3 {
   border-radius: 10px;
   margin-bottom: 5%;
   text-align: left;
-  background: #f7f7f7;
+  background: #c6c3c3;
   padding: 25px;
   cursor: pointer;
   display: flex;
@@ -341,11 +375,13 @@ h3 {
 
 .testimonial-col p {
   padding: 0;
+  color: black;
 }
 
 .testimonial-col h3 {
   text-align: left;
   margin-top: 15px;
+  color: black;
 }
 
 @media (max-width: 700px) {
@@ -358,6 +394,8 @@ h3 {
 /*call-to-action*/
 .call-to-action {
   margin:auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
   width: 80%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(images/comp.jpg);
@@ -365,7 +403,7 @@ h3 {
   background-size: cover;
   border-radius: 10px;
   text-align: center;
-  padding: 100px 0px;
+  padding: 100px 50px;
 }
 
 .call-to-action h1 {
@@ -387,6 +425,8 @@ h3 {
   text-align: center;
   padding: 30px 0;
   background-color:white;
+  color: #f7f7f7;
+  background-color: #120920;
 }
 
 .footer h4 {
@@ -396,7 +436,7 @@ h3 {
 }
 
 .icons .fa {
-  color: black;
+  color: #f7f7f7;
   margin: 0 13px;
   cursor: pointer;
   padding: 18px 0;
@@ -430,4 +470,13 @@ h3 {
   margin: 10px 0px 40px;
   color: black;
   font-size: 14px;
+}
+
+@font-face {
+  font-family: "robotobold";
+  src: url(fonts/static/RobotoMono-BoldItalic.ttf);
+}
+@font-face {
+  font-family: "roboto";
+  src: url(fonts/static/RobotoMono-Regular.ttf);
 }
