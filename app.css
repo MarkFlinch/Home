@@ -216,7 +216,7 @@ nav .fa {
 .about-col {
   flex-basis: 31%;
   background: rgb(35,141,129);
-  background: linear-gradient(0deg, rgba(35,141,129,1) 0%, rgba(167,205,220,1) 63%);
+  background: linear-gradient(0deg, rgba(35,141,129,1) 30%, rgba(167,205,220,1) 80%);
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px 12px;
