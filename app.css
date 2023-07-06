@@ -34,7 +34,7 @@ body{
 }
 
 .layer4{
-  background-image: url(layeredpurp.svg);
+  background-image: url(layereddarkpurp.svg);
 }
 body h1{
   color: #f7f7f7;
@@ -470,7 +470,7 @@ h3 {
   padding: 30px 0;
   background-color:white;
   color: #f7f7f7;
-  background-color: #1e004b;
+  background-color: #25163B;
 }
 
 .footer h4 {
