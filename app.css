@@ -229,7 +229,6 @@ nav .fa {
 }
 
 .row {
-  padding-top: 5px;
   margin: auto;
   max-width: 1200px;
   display: flex;
@@ -245,6 +244,7 @@ nav .fa {
   padding: 20px 12px;
   box-sizing: border-box;
   transition: 1s;
+  margin-top: 15px;
 }
 
 h3 {
